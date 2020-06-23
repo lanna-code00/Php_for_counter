@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input type="text" id="namey" placeholder="name">
+        <input type="text" onclick="addMe()" id="age" value="" placeholder="age">
+        <input type="text" id="school" placeholder="school">
+    </div>
+    <button onclick="add()">Click</button>
+</body>
+<script>
+    var newAge;
+   function add(){
+       var newArr = [];
+       var e = namey.value;
+      
+       var y = school.value;
+       var obj = {
+           value: e,
+           
+           school: y,
+       }
+       obj.age = newAge;
+       newArr.push(obj)
+         console.log(newArr);
+   
+    // console.log(newArr);
+   }
+
+   function addMe(){
+        age.value++
+       newAge = parseInt(age.value)
+   }
+   
+</script>
+</html>
